@@ -19,9 +19,15 @@
 
   /* Utils */
   --max-width: 82.5rem;
+  --sub-max-width: 40rem;
   --page-padding-block: 7rem;
   --page-padding-inline: 1.5rem;
   --transition-speed: 0.3s;
+
+  /* Fluid resize for smaller page sizes */
+  @media screen and (max-width: 400px) {
+    font-size: clamp(0.7rem, calc((100vw - 200px) * 0.08), 1rem);
+  }
 }
 
 img {

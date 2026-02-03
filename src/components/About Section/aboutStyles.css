@@ -5,16 +5,48 @@
 
 .about-section-wrapper {
   display: flex;
+  justify-content: space-between;
   margin-inline: auto;
   max-width: var(--max-width);
+  gap: 2rem;
 
   & > * {
-    flex: 1;
+    width: 100%;
+    max-width: var(--sub-max-width);
   }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+#about-me-header {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-block: 1rem;
+}
+
+.about-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    line-height: 1.75rem;
+  }
+}
+
+#skill-heading {
+  font-family: "Nunito Sans", "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-block-end: 2rem;
 }
 
 .skill-list {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 30rem;
 }
 
 .skill-item {
