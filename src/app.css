@@ -19,6 +19,7 @@
 
   /* Utils */
   --max-width: 82.5rem;
+  --page-padding-block: 7rem;
   --page-padding-inline: 1.5rem;
   --transition-speed: 0.3s;
 }
@@ -48,14 +49,15 @@ a {
 }
 
 button {
+  display: flex;
+  align-items: center;
+
   border: none;
   color: inherit;
   cursor: pointer;
   font: inherit;
-  font-size: 1.1rem;
+  font-weight: 500;
   transition: all var(--transition-speed) ease-in-out;
-  display: flex;
-  align-items: center;
 
   &.btn-primary,
   &.btn-secondary {

@@ -1,2 +1,3 @@
 import "./Page Header";
-import "./Hero";
+import "./Hero Section";
+import "./About Section";

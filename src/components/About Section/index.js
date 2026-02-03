@@ -1,0 +1,1 @@
+import "./aboutStyles.css";
