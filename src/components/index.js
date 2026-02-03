@@ -1,2 +1,2 @@
-import "./nav/nav";
-import "./hero/hero";
+import "./Page Header";
+import "./Hero";

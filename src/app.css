@@ -6,9 +6,124 @@
   padding: 0;
 }
 
+:root {
+  /* Colors */
+  --bg-primary: rgb(24, 23, 28);
+  --bg-secondary: rgb(20, 19, 23);
+
+  --color-primary: rgb(134, 112, 239);
+  --color-secondary: rgb(250, 215, 100);
+
+  --color-text-primary: rgb(255, 255, 255);
+  --color-text-secondary: rgb(0, 0, 0);
+
+  /* Utils */
+  --max-width: 82.5rem;
+  --page-padding-inline: 1.5rem;
+  --transition-speed: 0.3s;
+}
+
 img {
   width: 100%;
 }
 
 body {
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: all var(--transition-speed) ease-in-out;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
+button {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.1rem;
+  transition: all var(--transition-speed) ease-in-out;
+  display: flex;
+  align-items: center;
+
+  &.btn-primary,
+  &.btn-secondary {
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  &.btn-primary {
+    background-color: var(--color-primary);
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-text-secondary);
+    }
+  }
+  &.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text-secondary);
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-text-primary);
+    }
+  }
+  &.btn-no-bg {
+    padding-block: 1rem;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      border-top: 1px solid white;
+      border-right: 1px solid white;
+      border-top-right-radius: 0.3rem;
+      margin-inline-start: 0.5rem;
+      display: inline-block;
+      width: 0.7rem;
+      height: 0.7rem;
+      transform: rotate(45deg);
+      transition: all var(--transition-speed) ease-in-out;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+      &::after {
+        border-color: var(--color-primary);
+      }
+    }
+  }
+}
+
+[class*="--eyebrow"] {
+  color: var(--color-primary);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+main > *:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

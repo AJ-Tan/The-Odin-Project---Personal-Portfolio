@@ -3,60 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AJ Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="page-header">
-      <div class="page-logo"><h1>AJ Tan.</h1></div>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">Item 1</li>
-          <li class="nav-item">Item 2</li>
-          <li class="nav-item">Item 3</li>
-          <li class="nav-item">Item 4</li>
-          <li class="nav-item">Item 5</li>
-        </ul>
-      </nav>
-      <button class="btn-primary">Contact Me</button>
-      <button class="btn-menu-open" aria-label="Open menu.">☰</button>
-      <button class="btn-menu-close" aria-label="Close Menu">X</button>
+      <div class="page-header-wrapper">
+        <div class="page-logo">
+          <h1>AJ Tan <span class="color-primary period-style">.</span></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About Me</a></li>
+            <li class="nav-item"><a href="">Portfolio</a></li>
+            <li class="nav-item"><a href="">Contact Me</a></li>
+          </ul>
+        </nav>
+        <button class="btn-menu" aria-label="Open menu.">
+          <span class="slick-nav">
+            <span class="slick-bar"></span>
+            <span class="slick-bar"></span>
+            <span class="slick-bar"></span>
+          </span>
+        </button>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="hero-content">
-          <header>
-            <h2>Hey, I'm AJ!</h2>
-            <h3 aria-labelledby="desc--web-developer">
-              I'm a <span class="typing--web-developer"></span>
-            </h3>
-            <span id="desc--web-developer" hidden>I'm a Web Developer</span>
-          </header>
-          <p class="hero-introduction">
-            I’m a Web developer & I’m very passionate and dedicated to my work.
-            I have acquired the skills and knowledge necessary to make your
-            project a success.
-          </p>
+        <div class="hero-section-wrapper">
+          <div class="hero-content">
+            <header>
+              <h2>Hey, i m AJ!</h2>
+              <h3 aria-labelledby="desc--web-developer">
+                <span aria-hidden="true"
+                  >I m a
+                  <span class="typing--web-developer color-primary"></span
+                ></span>
+                <span id="desc--web-developer" hidden>I'm a Web Developer</span>
+              </h3>
+            </header>
+            <p class="hero-introduction">
+              I’m a Web developer & I’m very passionate and dedicated to my
+              work. I have acquired the skills and knowledge necessary to make
+              your project a success.
+            </p>
 
-          <div class="hero-nav-container">
-            <button class="btn-secondary">About Me</button>
-            <button class="btn-no-bg">My Works</button>
+            <div class="hero-nav-container">
+              <button class="btn-secondary">About Me</button>
+              <button class="btn-no-bg">My Works</button>
+            </div>
+
+            <footer aria-describedby="describe-footer">
+              <span id="describe-footer" class="sr-only"
+                >More details about me.</span
+              >
+              <ul class="hero-detail-list">
+                <li class="hero-detail-item">
+                  <span>Born In</span>
+                  <span>Zamboanga City</span>
+                </li>
+                <li class="hero-detail-item">
+                  <span>Date of Birth</span>
+                  <span>22 October 1996</span>
+                </li>
+                <li class="hero-detail-item">
+                  <span>Course</span>
+                  <span>Odin Project</span>
+                </li>
+              </ul>
+            </footer>
           </div>
-
-          <footer>
-            <ul class="hero-detail-list">
-              <li class="hero-detail-item">
-                <span>Born In</span>
-                <span>Zamboanga City</span>
-              </li>
-              <li class="hero-detail-item">
-                <span>Date of Birth</span>
-                <span>22 October 1996</span>
-              </li>
-            </ul>
-          </footer>
-        </div>
-        <div class="hero-image-container">
-          <img class="hero-image" alt="Picture of AJ in blue polo shirt." />
+          <div class="hero-image-container" aria-hidden="true">
+            <img class="hero-image" alt="Picture of AJ in blue polo shirt." />
+          </div>
         </div>
       </section>
       <section class="about-section">

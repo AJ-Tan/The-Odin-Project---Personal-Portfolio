@@ -32,7 +32,6 @@ export const typeTextAnimation = (
 
   const eraseText = () => {
     timeoutID = setTimeout(() => {
-      timesPlayed++;
       intervalID = setInterval(() => {
         elem.textContent = text.slice(0, counter--);
         if (counter <= -1) {
