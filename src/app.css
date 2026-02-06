@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Colors */
   --bg-primary: rgb(24, 23, 28);
@@ -65,6 +69,7 @@ textarea {
   }
 }
 
+a.button,
 button {
   display: flex;
   align-items: center;
