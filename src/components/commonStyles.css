@@ -1,0 +1,18 @@
+.section-header {
+  margin-block-end: 3rem;
+}
+
+.section-eyebrow {
+  display: block;
+}
+
+.section-header-text,
+.section-eyebrow {
+  text-align: center;
+}
+
+.section-header-text {
+  font-size: 3.5rem;
+  margin-block-start: 0.5rem;
+  font-family: "Nunito Sans", "Roboto", sans-serif;
+}

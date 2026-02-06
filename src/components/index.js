@@ -1,3 +1,4 @@
+import "./commonStyles.css";
 import "./Page Header";
 import "./Hero Section";
 import "./About Section";

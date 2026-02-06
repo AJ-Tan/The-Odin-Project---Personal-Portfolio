@@ -17,7 +17,7 @@ import todoImage from "../../images/Project Section/todo-app.png";
 import weatherImage from "../../images/Project Section/weather-app.png";
 import tictactoeImage from "../../images/Project Section/tictactoe.png";
 
-const projectImage = {
+const projectImageSrc = {
   battleship: battleshipImage,
   restaurant: restaurantImage,
   rps: rpsImage,
@@ -32,7 +32,7 @@ export {
   htmlIcon,
   cssIcon,
   jsIcon,
-  projectImage,
+  projectImageSrc,
   battleshipImage,
   restaurantImage,
   rpsImage,

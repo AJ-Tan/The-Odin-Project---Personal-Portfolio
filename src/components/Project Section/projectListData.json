@@ -1,52 +1,52 @@
 {
   "projects": [
     {
-      "project-id": 1,
-      "project-name": "Battleship",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "battleship",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Battle-Ships/"
+      "projectID": 1,
+      "projectName": "Battleship",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "battleship",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Battle-Ships/"
     },
     {
-      "project-id": 2,
-      "project-name": "Weather App",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "weather",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Weather-App/"
+      "projectID": 2,
+      "projectName": "Weather App",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "weather",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Weather-App/"
     },
     {
-      "project-id": 3,
-      "project-name": "Todo App",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "todo",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Todo-List/"
+      "projectID": 3,
+      "projectName": "Todo App",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "todo",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Todo-List/"
     },
     {
-      "project-id": 4,
-      "project-name": "Restaurant",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "restaurant",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Restaurant-Page/"
+      "projectID": 4,
+      "projectName": "Restaurant",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "restaurant",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Restaurant-Page/"
     },
     {
-      "project-id": 5,
-      "project-name": "Tic Tac Toe",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "tictactoe",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Tic-Tac-Toe/"
+      "projectID": 5,
+      "projectName": "Tic Tac Toe",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "tictactoe",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Tic-Tac-Toe/"
     },
     {
-      "project-id": 6,
-      "project-name": "Rock Paper Scissor",
-      "project-origin": "Odin Project",
-      "technology-used:": ["html", "css", "js"],
-      "project-image": "rps",
-      "project-link": "https://aj-tan.github.io/The-Odin-Project---Rock-Paper-Scissor/"
+      "projectID": 6,
+      "projectName": "Rock Paper Scissor",
+      "projectOrigin": "Odin Project",
+      "technologyUsed": ["html", "css", "js"],
+      "projectImage": "rps",
+      "projectLink": "https://aj-tan.github.io/The-Odin-Project---Rock-Paper-Scissor/"
     }
   ]
 }

@@ -48,10 +48,6 @@ a {
   color: var(--color-text-primary);
   text-decoration: none;
   transition: all var(--transition-speed) ease-in-out;
-
-  &:hover {
-    color: var(--color-secondary);
-  }
 }
 
 button {

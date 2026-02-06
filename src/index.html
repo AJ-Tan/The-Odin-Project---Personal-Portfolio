@@ -135,20 +135,17 @@
         </div>
       </section>
       <section class="project-section">
-        <span class="project-header--eyebrow">MY WORKS & PORTFOLIO</span>
-        <h2>My Projects</h2>
-        <ul class="project-list">
-          <!-- Populated from ./src/components/Project Section -->
-          <!-- <li class="project-item">
-            <div class="project-image-wrapper">
-              <img src="" alt="" />
-            </div>
-            <div class="project-details">
-              <span class="project-title--eyebrow">Odin Project</span>
-              <h3 class="project-title">Project Title 1</h3>
-            </div>
-          </li> -->
-        </ul>
+        <div class="project-section-wrapper">
+          <div class="section-header">
+            <span class="section-eyebrow project-header--eyebrow"
+              >MY WORKS & PORTFOLIO</span
+            >
+            <h2 class="section-header-text">My Projects</h2>
+          </div>
+          <ul class="project-list">
+            <!-- Populated from ./src/components/Project Section -->
+          </ul>
+        </div>
       </section>
       <section class="contact-section">
         <div class="contact-me">
@@ -178,43 +175,41 @@
             </li>
           </ul>
         </div>
-        <div class="contact-form">
-          <form action="">
-            <h2 class="form-header">Fill The Form</h2>
-            <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your Full Name"
-                aria-required="true"
-                required
-              />
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-                aria-required="true"
-                required
-              />
-              <input
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Your Message"
-                aria-required="true"
-                required
-              />
-            </div>
-            <input type="submit" value="SEND MESSAGE" />
-          </form>
-        </div>
+        <form class="contact-form" action="">
+          <h2 class="form-header">Fill The Form</h2>
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Full Name"
+              aria-required="true"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              aria-required="true"
+              required
+            />
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              aria-required="true"
+              required
+            />
+          </div>
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
       </section>
     </main>
 
     <footer>
-      <span>Made by: Aldomin Joseph R. Tan</span>
+      <span>Made by: AJ Tan</span>
     </footer>
   </body>
 </html>
