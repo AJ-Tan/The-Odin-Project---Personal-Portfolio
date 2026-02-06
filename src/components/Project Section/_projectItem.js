@@ -17,6 +17,7 @@ export const projectItem = ({
   anchorElem.href = projectLink;
   anchorElem.target = "_blank";
   anchorElem.rel = "noopener noreferrer";
+  anchorElem.ariaLabel = `Opens ${projectName} project in another tab.`;
   projectItemElem.appendChild(anchorElem);
 
   const projectImageContainerElem = document.createElement("div");
@@ -26,6 +27,7 @@ export const projectItem = ({
   const projectImageElem = document.createElement("img");
   projectImageElem.classList.add("project-image");
   projectImageElem.src = projectImageSrc[projectImage];
+  projectImageElem.alt = `Screenshot of ${projectImage} project.`;
   projectImageContainerElem.appendChild(projectImageElem);
 
   const projectDetailsElem = document.createElement("div");

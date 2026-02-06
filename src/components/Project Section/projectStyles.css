@@ -28,7 +28,7 @@
     height: 100%;
 
     &:hover .project-image {
-      height: 115%;
+      height: 110%;
     }
   }
 
@@ -78,6 +78,11 @@
 }
 
 .project-name {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: "Nunito Sans", "Roboto", sans-serif;
+  transition: color var(--transition-speed) ease-in-out;
+
+  &:hover {
+    color: var(--color-primary);
+  }
 }
