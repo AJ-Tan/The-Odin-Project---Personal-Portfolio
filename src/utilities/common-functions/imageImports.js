@@ -26,6 +26,10 @@ const projectImageSrc = {
   weather: weatherImage,
 };
 
+import bellIcon from "../../images/Contact Section/bell-icon.png";
+import messageIcon from "../../images/Contact Section/message-icon.png";
+import worldIcon from "../../images/Contact Section/world-icon.png";
+
 export {
   heroImg,
   technologiesImage,
@@ -39,4 +43,7 @@ export {
   todoImage,
   tictactoeImage,
   weatherImage,
+  bellIcon,
+  messageIcon,
+  worldIcon,
 };

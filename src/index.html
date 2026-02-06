@@ -148,63 +148,95 @@
         </div>
       </section>
       <section class="contact-section">
-        <div class="contact-me">
-          <span class="contact-header--eyebrow">CONTACT ME</span>
-          <h2>Let Us Work Together</h2>
-          <ul class="contact-list">
-            <li class="contact-item">
-              <div class="contact-image-wrapper"></div>
-              <div class="contact-details">
-                <span class="contact-method">PHONE</span>
-                <span class="contact-text">+00 001 002 003</span>
-              </div>
-            </li>
-            <li class="contact-item">
-              <div class="contact-image-wrapper"></div>
-              <div class="contact-details">
-                <span class="contact-method">EMAIL</span>
-                <span class="contact-text">help@example.com</span>
-              </div>
-            </li>
-            <li class="contact-item">
-              <div class="contact-image-wrapper"></div>
-              <div class="contact-details">
-                <span class="contact-method">LOCATION</span>
-                <span class="contact-text">Hevin 101, California, USA</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <form class="contact-form" action="">
-          <h2 class="form-header">Fill The Form</h2>
-          <div class="form-group">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your Full Name"
-              aria-required="true"
-              required
-            />
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              aria-required="true"
-              required
-            />
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Your Message"
-              aria-required="true"
-              required
-            />
+        <div class="contact-section-wrapper">
+          <div class="contact-me">
+            <header class="section-header">
+              <span class="contact-header--eyebrow">CONTACT ME</span>
+              <h2 class="section-header-text contact-header-text">
+                Let Us Work Together
+              </h2>
+            </header>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <img class="bell-icon" alt="" />
+                </div>
+                <div class="contact-details">
+                  <span class="contact-method">PHONE</span>
+                  <span class="contact-text">+63 123 4567 890</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <img class="message-icon" alt="" />
+                </div>
+                <div class="contact-details">
+                  <span class="contact-method">EMAIL</span>
+                  <span class="contact-text">x@gmail.com</span>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <img class="world-icon" alt="" />
+                </div>
+                <div class="contact-details">
+                  <span class="contact-method">LOCATION</span>
+                  <span class="contact-text">Zamboanga City, Philippines</span>
+                </div>
+              </li>
+            </ul>
           </div>
-          <input type="submit" value="SEND MESSAGE" />
-        </form>
+          <div class="contact-form">
+            <form action="">
+              <div class="form-content-wrapper">
+                <h2 class="form-header">Fill The Form</h2>
+                <div class="form-inputs">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Your Full Name"
+                      aria-required="true"
+                      required
+                    />
+                    <span class="error-message"
+                      >Please fill out this field</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email Address"
+                      aria-required="true"
+                      required
+                    />
+                    <span class="error-message"
+                      >Please enter an email address.</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="round-button">
+                  <input
+                    class="submit-form"
+                    type="submit"
+                    value="SEND MESSAGE"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 

@@ -1,0 +1,159 @@
+.contact-section {
+  padding-block: var(--page-padding-block);
+  padding-inline: var(--page-padding-inline);
+}
+
+.contact-section-wrapper {
+  display: flex;
+  column-gap: 10rem;
+  row-gap: 5rem;
+
+  max-width: var(--max-width);
+  margin-inline: auto;
+
+  & > * {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.contact-header-text {
+  text-align: left;
+
+  span {
+    margin-block-start: -0.75rem;
+    display: block;
+  }
+}
+
+.contact-list {
+  margin-block-start: -2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:not(:first-child) {
+    padding-block-start: 1.5rem;
+  }
+
+  &:not(:last-child) {
+    padding-block-end: 1.5rem;
+    border-block-end: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.contact-icon-wrapper {
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  padding: 0.75rem;
+  width: 5rem;
+
+  background-color: var(--bg-primary);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-method {
+  font-weight: 600;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-block-end: 3rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  input {
+    padding-block-end: 0.5rem;
+  }
+
+  textarea {
+    height: 5rem;
+    resize: none;
+  }
+
+  :is(input, textarea):user-invalid ~ .error-message {
+    display: block;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.error-message {
+  display: none;
+  color: var(--color-text-error);
+  font-size: 0.9rem;
+}
+
+.round-button {
+  display: flex;
+  justify-content: center;
+
+  width: 9rem;
+  aspect-ratio: 1 / 1;
+
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  margin-block-start: 2rem;
+
+  position: relative;
+
+  input {
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    z-index: 1;
+    transform: translate(-3%, -3%);
+    transition: transform var(--transition-speed) ease-in-out;
+  }
+
+  &:hover::before {
+    transform: translate(0%, 0%);
+  }
+}

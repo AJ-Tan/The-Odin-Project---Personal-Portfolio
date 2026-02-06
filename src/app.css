@@ -16,17 +16,22 @@
 
   --color-text-primary: rgb(255, 255, 255);
   --color-text-secondary: rgb(0, 0, 0);
+  --color-text-error: rgba(255, 0, 0, 0.8);
 
   /* Utils */
   --max-width: 82.5rem;
   --sub-max-width: 40rem;
-  --page-padding-block: 7rem;
+  --page-padding-block: 9rem;
   --page-padding-inline: 1.5rem;
   --transition-speed: 0.3s;
 
+  @media screen and (max-width: 1024px) {
+    --page-padding-block: 5rem;
+  }
+
   /* Fluid resize for smaller page sizes */
-  @media screen and (max-width: 400px) {
-    font-size: clamp(0.7rem, calc((100vw - 200px) * 0.08), 1rem);
+  @media screen and (max-width: 450px) {
+    font-size: clamp(0.7rem, calc((100vw - 200px) * 0.063), 1rem);
   }
 }
 
@@ -48,6 +53,16 @@ a {
   color: var(--color-text-primary);
   text-decoration: none;
   transition: all var(--transition-speed) ease-in-out;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: var(--color-text-primary);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 button {
