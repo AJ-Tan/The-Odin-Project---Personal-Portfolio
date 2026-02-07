@@ -4,3 +4,4 @@ import "./Hero Section";
 import "./About Section";
 import "./Project Section";
 import "./Contact Section";
+import "./Page Footer";

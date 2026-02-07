@@ -1,0 +1,57 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+
+  &::before {
+    content: "";
+    position: relative;
+    background: linear-gradient(
+      to right,
+      var(--bg-secondary),
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      var(--bg-secondary)
+    );
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.marquee-text {
+  text-wrap: nowrap;
+  position: absolute;
+  width: 100vw;
+
+  & > span {
+    padding-inline-start: 2rem;
+  }
+
+  & > span:not(:last-child) {
+    &::after {
+      padding-inline-start: 2.3rem;
+      content: "*";
+    }
+  }
+  animation: slide-to-left 100s linear infinite;
+}
+
+.marquee-text-owner {
+  color: var(--color-secondary);
+}
+
+@keyframes slide-to-left {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -300%;
+  }
+}
